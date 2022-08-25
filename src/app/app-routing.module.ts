@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'menutabs',
+    loadChildren: () => import('./menutabs/menutabs.module').then( m => m.MenutabsPageModule)
+  },
 ];
 
 @NgModule({
